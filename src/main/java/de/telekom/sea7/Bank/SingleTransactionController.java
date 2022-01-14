@@ -1,6 +1,5 @@
 package de.telekom.sea7.Bank;
 
-import java.util.Scanner;
 
 public class SingleTransactionController {
 	
@@ -8,7 +7,7 @@ public class SingleTransactionController {
 	public void run(String[] args) {
 		
 		// Instanz eines Models erstellen
-		SingleTransactionModel sT = new SingleTransactionModel("TestEmpfaenger", "DE12TESTIBAN123", "BICXXX", 12.5, "€" );
+		SingleTransactionModel sT = new SingleTransactionModel("TestEmpfaenger", "DE12TESTIBAN123", "BICXXX", "12.5", "€", "blablabla" );
 		
 		// Instanz einer View erstellen
 		TransactionView tV = new TransactionView();
@@ -16,8 +15,11 @@ public class SingleTransactionController {
 		// Model und View bekannt machen
 		tV.setsT(sT);
 		
+		tV.menu();
+		
+		
 		// Aufruf der Ausgabenmethode aus der View
-		tV.ausgeben();
+		//tV.ausgeben();
 		
 	}
 	

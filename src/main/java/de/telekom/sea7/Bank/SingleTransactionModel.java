@@ -6,12 +6,12 @@ public class SingleTransactionModel {
 	private String 	empfaenger;
 	private String 	empfaengerIban;
 	private String 	empfaengerBic;
-	private double 	betrag;
+	private String 	betrag;
 	private String	waehrung;
 	private String	verwendungszweck;
 	
 	// Eigener Constructor mit Verwendungszweck
-	public SingleTransactionModel(String empfaenger, String empfaengerIban, String empfaengerBic, double betrag, String waehrung, String	verwendungszweck) {
+	public SingleTransactionModel(String empfaenger, String empfaengerIban, String empfaengerBic, String betrag, String waehrung, String	verwendungszweck) {
 		this.empfaenger = empfaenger;
 		this.empfaengerIban = empfaengerIban;
 		this.empfaengerBic = empfaengerBic;
@@ -21,13 +21,13 @@ public class SingleTransactionModel {
 	}
 	
 	// Zweiter Constructor ohne Verwendungszweck
-	public SingleTransactionModel(String empfaenger, String empfaengerIban, String empfaengerBic, double betrag, String waehrung) {
+	/*public SingleTransactionModel(String empfaenger, String empfaengerIban, String empfaengerBic, String betrag, String waehrung) {
 		this.empfaenger = empfaenger;
 		this.empfaengerIban = empfaengerIban;
 		this.empfaengerBic = empfaengerBic;
 		this.betrag = betrag;
 		this.waehrung = waehrung;
-	}
+	}*/
 	
 	// Get-/Set-Methoden
 	public String getEmpfaenger() {
@@ -42,16 +42,17 @@ public class SingleTransactionModel {
 	public void setEmpfaengerIban(String empfaengerIban) {
 		this.empfaengerIban = empfaengerIban;
 	}
+	
 	public String getEmpfaengerBic() {
 		return empfaengerBic;
 	}
 	public void setEmpfaengerBic(String empfaengerBic) {
 		this.empfaengerBic = empfaengerBic;
 	}
-	public double getBetrag() {
+	public String getBetrag() {
 		return betrag;
 	}
-	public void setBetrag(double betrag) {
+	public void setBetrag(String betrag) {
 		this.betrag = betrag;
 	}
 	public String getWaehrung() {
