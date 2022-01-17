@@ -1,4 +1,4 @@
-package de.telekom.de.Arrays;
+package de.telekom.sea7.Arrays;
 
 public class Lottogesellschaft {
 
