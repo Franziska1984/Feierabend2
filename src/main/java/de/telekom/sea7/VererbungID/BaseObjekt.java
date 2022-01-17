@@ -1,4 +1,4 @@
-package VererbungID;
+package de.telekom.sea7.VererbungID;
 
 public class BaseObjekt {
 

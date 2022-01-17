@@ -1,4 +1,4 @@
-package Hundelexikon;
+package de.telekom.sea7.Hundelexikon;
 
 public class Start {
 
