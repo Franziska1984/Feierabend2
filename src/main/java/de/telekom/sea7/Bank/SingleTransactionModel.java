@@ -6,12 +6,12 @@ public class SingleTransactionModel {
 	private String 	empfaenger;
 	private String 	empfaengerIban;
 	private String 	empfaengerBic;
-	private String 	betrag;
+	private double 	betrag;
 	private String	waehrung;
 	private String	verwendungszweck;
 	
 	// Eigener Constructor mit Verwendungszweck
-	public SingleTransactionModel(String empfaenger, String empfaengerIban, String empfaengerBic, String betrag, String waehrung, String	verwendungszweck) {
+	public SingleTransactionModel(String empfaenger, String empfaengerIban, String empfaengerBic, double betrag, String waehrung, String	verwendungszweck) {
 		this.empfaenger = empfaenger;
 		this.empfaengerIban = empfaengerIban;
 		this.empfaengerBic = empfaengerBic;
@@ -49,10 +49,10 @@ public class SingleTransactionModel {
 	public void setEmpfaengerBic(String empfaengerBic) {
 		this.empfaengerBic = empfaengerBic;
 	}
-	public String getBetrag() {
+	public double getBetrag() {
 		return betrag;
 	}
-	public void setBetrag(String betrag) {
+	public void setBetrag(double betrag) {
 		this.betrag = betrag;
 	}
 	public String getWaehrung() {

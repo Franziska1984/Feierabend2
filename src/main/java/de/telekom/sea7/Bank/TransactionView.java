@@ -70,16 +70,18 @@ public class TransactionView {
 		System.out.println("Bitte gib hier die IBAN des Empfängers ein: ");
 		String eingabeIbanEmpfaenger;
 		eingabeIbanEmpfaenger = scanner.nextLine();
+		System.out.println("Bitte gib hier die BIC des Empfängers ein: ");
+		String eingabeBic = scanner.nextLine();
 		System.out.println("Bitte gib hier den Betrag ein: ");
-		String eingabeBetrag;
-		eingabeBetrag = scanner.nextLine();
+		double eingabeBetrag;
+		eingabeBetrag = scanner.nextDouble();
 		System.out.println("Bitte gib hier die Währung ein: ");
 		String eingabeWaehrung;
 		eingabeWaehrung = scanner.nextLine();
 		System.out.println("Bitte gib hier den Verwendungszeck ein: ");
 		String eingabeVerwendungszweck;
 		eingabeVerwendungszweck = scanner.nextLine();
-		SingleTransactionModel sT1 = new SingleTransactionModel (eingabeEmpfaenger, eingabeIbanEmpfaenger, eingabeBetrag, eingabeWaehrung, eingabeVerwendungszweck);
+		SingleTransactionModel sT1 = new SingleTransactionModel (eingabeEmpfaenger, eingabeIbanEmpfaenger, eingabeBic, eingabeBetrag, eingabeWaehrung, eingabeVerwendungszweck);
 		
 		
 		System.out.println("Danke für deine Eingabe");	
